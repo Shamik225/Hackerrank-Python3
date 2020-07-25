@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import re
+for i in range(int(input())):
+    try:
+        s = str(input())
+        re.compile(s)
+        is_valid = True
+        print(is_valid)
+    except re.error:
+        is_valid = False
+        print(is_valid)
